@@ -1,0 +1,151 @@
+
+
+:root {
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--very-dark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-main-BG);
+    font-size: 18px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: var(--soft-blue);
+}
+
+.container {
+    background-color: var(--very-dark-blue-card-BG);
+    width: 320px;
+    border-radius: 15px;
+    padding: 20px 10px 10px 10px;
+   
+  
+    
+}
+
+.img-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.main-img {
+    width: 285px;
+    height: 285px;
+    border-radius: 15px;
+}
+
+.img-view {
+    background: hsla(178, 80%, 50%, 0.5);
+    position: absolute;
+    width: 285px;
+    height: 285px;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    border-radius: 15px;
+}
+
+.img-cover:hover, .img-view:hover {
+    cursor: pointer;
+}
+
+.img-view:hover {
+    opacity: 1;
+}
+
+.header {
+    position: relative;
+    left: 8px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cyan);
+}
+
+.text {
+    
+    font-weight: 300;
+   
+}
+
+.eth {
+    color: var(--cyan);
+   
+    
+}
+
+.days-left {
+    color: var(--soft-blue);
+    margin-left: 80px;
+    
+    
+}
+
+
+.seperator {
+    width: 90%;
+    height: 1px;
+    background-color: var(--very-dark-blue-line);
+    margin-top: 20px;
+    margin-bottom: 10px;
+ 
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-name {
+    color: var(--white);
+    
+}
+
+.user-info {
+    font-size: 15px;
+    display: inline-flex;
+   
+}
+
+.user {
+    font-weight: 300;
+    position: relative;
+    bottom: 10px;
+}
+
+.user-info {
+    margin: 10px 10px 0 10px;
+}
+
+.text, .eth-days, .seperator {
+    margin: 20px 10px 10px 15px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
